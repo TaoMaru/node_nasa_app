@@ -15,7 +15,6 @@ app.get('/', function(req, res){
             "api_key": "V6c5pm6c6Z9BecTGTaRangJbafg95NP2Oy75ieAE"
         }
     }).then(function(response){
-        console.log(response);
         res.render('home.ejs', {"nasaData": response.data})
     })
 })
